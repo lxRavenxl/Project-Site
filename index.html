@@ -74,20 +74,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <meta name="twitter:image" content="https://vvv-cricket.nl/vvv2.avif">
   
   <script src="https://cdn.tailwindcss.com"></script>
-<link rel="preload" href="/registration.css?v=1.2" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<link rel="preload" href="registration.css?v=1.6" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript>
-  <link rel="stylesheet" href="/registration.css?v=1.2">
+  <link rel="stylesheet" href="registration.css?v=1.6">
 </noscript>
   <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
-<body class="bg-white">
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
 	<!-- Google Tag Manager (noscript) -->
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WM2BM5D8"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
   <!-- ===== NAVBAR ===== -->
-  <header class="bg-white shadow-md fixed w-full top-0 left-0 z-50">
+  <header class="bg-white dark:bg-gray-900 shadow-md fixed w-full top-0 left-0 z-50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="flex justify-between items-center h-16">
 
@@ -99,15 +99,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="flex items-center space-x-2 ml-auto">
         <!-- Desktop Nav Links -->
         <nav class="hidden md:flex items-center space-x-4">
-          <a href="https://vvv-cricket.nl" class="text-gray-700 font-medium hover:text-blue-700 transition">Home</a>
-          <a href="#" id="matchBtn" class="text-gray-700 font-medium hover:text-blue-700 transition">History</a>
+          <a href="https://vvv-cricket.nl" class="text-gray-700 dark:text-gray-300 font-medium hover:text-blue-700 dark:hover:text-blue-300 transition">Home</a>
+          <a href="#" id="matchBtn" class="text-gray-700 dark:text-gray-300 font-medium hover:text-blue-700 dark:hover:text-blue-300 transition">History</a>
         </nav>
 
         <!-- Mobile Hamburger -->
         <button id="menuBtn" class="md:hidden flex flex-col space-y-1.5 focus:outline-none" aria-label="Open menu">
-          <span class="w-6 h-0.5 bg-gray-800"></span>
-          <span class="w-6 h-0.5 bg-gray-800"></span>
-          <span class="w-6 h-0.5 bg-gray-800"></span>
+          <span class="w-6 h-0.5 bg-gray-800 dark:bg-gray-300"></span>
+          <span class="w-6 h-0.5 bg-gray-800 dark:bg-gray-300"></span>
+          <span class="w-6 h-0.5 bg-gray-800 dark:bg-gray-300"></span>
         </button>
 
       <button onclick="showRegistration()"
@@ -126,17 +126,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   <!-- Mobile Dropdown Menu -->
-  <div id="mobileMenu" class="hidden md:hidden bg-white shadow-lg border-t">
-    <a href="https://vvv-cricket.nl" id="homeBtnMobile" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Home</a>
-    <a href="#" id="matchBtnMobile" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">History</a>
+  <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-900 shadow-lg dark:shadow-gray-600border-t">
+    <a href="https://vvv-cricket.nl" id="homeBtnMobile" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
+    <a href="#" id="matchBtnMobile" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">History</a>
   </div>
 </header>
 
   <!-- ===== PAGE CONTENT (pushed down to avoid navbar overlap) ===== -->
-  <main id="home" class="pt-5">
+  <main id="home" class="pt-5 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
 
     <!-- ===== HERO SECTION ===== -->
-    <section class="relative bg-gradient-to-br from-blue-50 to-blue-100 overflow-hidden">
+    <section class="relative bg-gradient-to-br from-blue-50 to-blue-100 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
       <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-transparent"></div>
 
       <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
@@ -149,12 +149,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span>
                 Established 1902
               </div>
-              <h1 class="text-4xl md:text-6xl font-bold text-gray-900 leading-tight">
+              <h1 class="text-4xl md:text-6xl font-bold text-gray-900 dark:text-gray-100 leading-tight">
                 Welcome to
-                <span class="block text-blue-700">VVV (Veni Vidi Vici)</span>
+                <span class="block text-blue-700 dark:text-blue-300">VVV (Veni Vidi Vici)</span>
                 Cricket Club
               </h1>
-              <p class="text-xl text-gray-600 leading-relaxed max-w-xl">
+              <p class="text-xl text-gray-600 dark:text-gray-300 leading-relaxed max-w-xl">
                 Amsterdam’s premier multicultural cricket club where tradition meets excellence. Join our community of passionate players and experience the finest cricket facilities in the region.
               </p>
             </div>
@@ -168,7 +168,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <a href="https://matchcentre.kncb.nl/matches/?entity=134453&grade=71375&season=19&team=134475" 
    target="_blank" 
    rel="noopener noreferrer"
-   class="border border-blue-200 text-blue-700 hover:bg-blue-50 px-8 py-6 text-lg rounded-full shadow-sm hover:shadow-md transition-all duration-300 inline-flex items-center justify-center">
+   class="border border-blue-200 text-blue-700 dark:text-blue-300 hover:bg-blue-50 dark:hover:bg-blue-600 px-8 py-6 text-lg rounded-full shadow-sm hover:shadow-md transition-all duration-300 inline-flex items-center justify-center">
    ▶ Watch Highlights
 </a>
             </div>
@@ -200,60 +200,60 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </section>
 <!-- ===== ABOUT SECTION ===== -->
-<section class="py-20 bg-white">
+<section class="py-20 bg-white dark:bg-gray-900">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16 animate-title opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+       <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6">
         About VVV (Veni Vidi Vici) Cricket Club
       </h2>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto leading-relaxed">
         For over 120 years, VVV (Veni Vidi Vici) Cricket Club has been a cornerstone of local cricket in Amsterdam, fostering talent, building community, and celebrating the sport we all love.
       </p>
     </div>
 
         <!-- Values -->
 <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16 animate-grid">
-<div class="animate-card shadow-md hover:shadow-xl p-8 text-center rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
+<div class="animate-card shadow-md dark:shadow-gray-600 hover:shadow-xl dark:hover:shadow-gray-600 bg-white dark:bg-gray-900 p-8 text-center rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
             <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-6">
               <span class="text-blue-700 text-2xl font-bold">✓</span>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Excellence</h3>
-            <p class="text-gray-600">Striving for the highest standards on and off the field.</p>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">Excellence</h3>
+            <p class="text-gray-600 dark:text-gray-300">Striving for the highest standards on and off the field.</p>
           </div>
 
-<div class="animate-card shadow-md hover:shadow-xl p-8 text-center rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
+<div class="animate-card shadow-md dark:shadow-gray-600 hover:shadow-xl dark:hover:shadow-gray-600 bg-white dark:bg-gray-900 p-8 text-center rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
             <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-6">
               <span class="text-blue-700 text-2xl font-bold">✓</span>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Community</h3>
-            <p class="text-gray-600">Bringing people together through the love of cricket.</p>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">Community</h3>
+            <p class="text-gray-600 dark:text-gray-300">Bringing people together through the love of cricket.</p>
           </div>
 
-<div class="animate-card shadow-md hover:shadow-xl p-8 text-center rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
+<div class="animate-card shadow-md dark:shadow-gray-600 hover:shadow-xl dark:hover:shadow-gray-600 bg-white dark:bg-gray-900 p-8 text-center rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
             <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-6">
               <span class="text-blue-700 text-2xl font-bold">✓</span>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Development</h3>
-            <p class="text-gray-600">Nurturing talent and inspiring future generations.</p>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">Development</h3>
+            <p class="text-gray-600 dark:text-gray-300">Nurturing talent and inspiring future generations.</p>
           </div>
 
-<div class="animate-card shadow-md hover:shadow-xl p-8 text-center rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
+<div class="animate-card shadow-md dark:shadow-gray-600 hover:shadow-xl dark:hover:shadow-gray-600 bg-white dark:bg-gray-900 p-8 text-center rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
             <div class="w-16 h-16 bg-gradient-to-br from-blue-100 to-blue-200 rounded-full flex items-center justify-center mx-auto mb-6">
               <span class="text-blue-700 text-2xl font-bold">✓</span>
             </div>
-            <h3 class="text-xl font-bold text-gray-900 mb-3">Tradition</h3>
-            <p class="text-gray-600">Honoring over 120 years of cricketing heritage.</p>
+            <h3 class="text-xl font-bold text-gray-900 dark:text-gray-100 mb-3">Tradition</h3>
+            <p class="text-gray-600 dark:text-gray-300">Honoring over 120 years of cricketing heritage.</p>
           </div>
         </div>
 
         <!-- Heritage -->
-        <div class="bg-gradient-to-r from-blue-50 to-blue-100 rounded-3xl p-8 md:p-12">
+        <div class="bg-gradient-to-r from-blue-50 to-blue-100 dark:from-gray-900 dark:to-gray-800 rounded-3xl p-8 md:p-12">
           <div class="grid lg:grid-cols-2 gap-8 items-center">
             <div>
-              <h3 class="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
+              <h3 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-gray-100 mb-6">
                 Our Rich Heritage
               </h3>
-              <div class="space-y-4 text-gray-700">
+              <div class="space-y-4 text-gray-700 dark:text-gray-300">
                 <p>Founded in 1902 by a group of cricket enthusiasts, VVV (Veni Vidi Vici) Cricket Club has grown from humble beginnings to become one of the Amsterdam's most respected cricket club.</p>
                 <p>Our pristine ground have hosted countless memorable matches, from junior development games to senior championship finals.</p>
                 <p>Today, we continue to uphold the traditions that make cricket special while embracing modern training methods and facilities.</p>
@@ -272,31 +272,31 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </section>
 
 <!-- ===== FACILITIES SECTION ===== -->
-<section class="py-20 bg-gray-50">
+<section class="py-20 bg-gray-50 dark:bg-gray-900">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
     <div class="text-center mb-16 animate-title opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
-      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+      <h2 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-gray-100 mb-6">
         World-Class Facilities
       </h2>
-      <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+      <p class="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
         Our ground and facilities provide the perfect environment for cricket at all levels, from junior coaching to senior competition.
       </p>
     </div>
 
 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16 animate-grid">
-<div class="animate-card shadow-sm hover:shadow-lg p-6 rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
-    <h3 class="font-bold text-gray-900 mb-2">Professional-Grade Pitch</h3>
-    <p class="text-gray-600 text-sm">A meticulously maintained AstroTurf for competitive cricket.</p>
+<div class="animate-card shadow-sm dark:shadow-gray-600 bg-white dark:bg-gray-900 hover:shadow-lg dark:hover:shadow-gray-600 p-6 rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
+    <h3 class="font-bold text-gray-900 dark:text-gray-100 mb-2">Professional-Grade Pitch</h3>
+    <p class="text-gray-600 dark:text-gray-300 text-sm">A meticulously maintained AstroTurf for competitive cricket.</p>
   </div>
 
-<div class="animate-card shadow-sm hover:shadow-lg p-6 rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
-    <h3 class="font-bold text-gray-900 mb-2">Training Nets</h3>
-    <p class="text-gray-600 text-sm">Modern practice nets with bowling machine for practice sessions.</p>
+<div class="animate-card shadow-sm dark:shadow-gray-600 bg-white dark:bg-gray-900 hover:shadow-lg dark:hover:shadow-gray-600 p-6 rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
+    <h3 class="font-bold text-gray-900 dark:text-gray-100 mb-2">Training Nets</h3>
+    <p class="text-gray-600 dark:text-gray-300 text-sm">Modern practice nets with bowling machine for practice sessions.</p>
   </div>
 
-<div class="animate-card shadow-sm hover:shadow-lg p-6 rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
-    <h3 class="font-bold text-gray-900 mb-2">Club Pavilion</h3>
-    <p class="text-gray-600 text-sm">Modern pavilion featuring a welcoming canteen with snacks, drinks, and full amenities.</p>
+<div class="animate-card shadow-sm dark:shadow-gray-600 bg-white dark:bg-gray-900 hover:shadow-lg dark:hover:shadow-gray-600 p-6 rounded-2xl opacity-0 scale-75 transform transition-all duration-[2000ms] ease-out">
+    <h3 class="font-bold text-gray-900 dark:text-gray-100 mb-2">Club Pavilion</h3>
+    <p class="text-gray-600 dark:text-gray-300 text-sm">Modern pavilion featuring a welcoming canteen with snacks, drinks, and full amenities.</p>
   </div>
 </div>
 
@@ -386,84 +386,83 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
-<section id="matchSection" class="hidden py-20 bg-white">
+<section id="matchSection" class="hidden py-20 bg-white dark:bg-gray-900">
   <div class="max-w-3xl mx-auto px-4">
-    <h2 class="text-2xl font-bold mb-6">Find Player Matches</h2>
+    <h2 class="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">Find Player Matches</h2>
     <div class="flex gap-2">
       <input id="playerIdInput" type="text" placeholder="Enter Player ID (e.g. 1234746)"
-             class="border rounded px-3 py-2 w-full max-w-md">
-    <select id="seasonSelect" class="border rounded px-2 py-1">
-    <option value="19" selected>2025</option>
-    <option value="17">2024</option>
-    <option value="15">2023</option>
-    <option value="13">2022</option>
-    <option value="12">2021</option>
-    <option value="11">2020</option>
-  </select>
-      <button id="fetchPlayerBtn" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded">
+             class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded px-3 py-2 w-full max-w-md">
+      <select id="seasonSelect" class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded px-2 py-1">
+        <option value="19" selected>2025</option>
+        <option value="17">2024</option>
+        <option value="15">2023</option>
+        <option value="13">2022</option>
+        <option value="12">2021</option>
+        <option value="11">2020</option>
+      </select>
+      <button id="fetchPlayerBtn" class="bg-blue-600 dark:bg-blue-900 hover:bg-blue-700 dark:hover:bg-blue-800 text-white dark:text-blue-300 px-4 py-2 rounded">
         Search
       </button>
     </div>
     <div id="playerTable" class="mt-6"></div>
     <div id="lastGamesTable" class="mt-6"></div>
-
   </div>
-</section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
+</section>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
   <!-- ===== FOOTER ===== -->
-<footer class="bg-white text-gray-700 mt-auto">
+<footer class="bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 mt-auto">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-12">
     
     <!-- Logo + Description -->
     <div class="flex flex-col items-start">
       <img src="logo_t.png" alt="VVV Cricket Club Logo" class="h-12 mb-4">
-      <p class="text-gray-500 text-sm">
+      <p class="text-gray-500 dark:text-gray-300 text-sm">
         A premier cricket club in Amsterdam dedicated to excellence, sportsmanship, and community.
       </p>
     </div>
 
     <!-- Contact Info -->
     <div>
-      <h3 class="text-gray-900 font-semibold text-lg mb-4">Contact</h3>
-      <p class="text-gray-500 text-sm mb-2">VVV Cricket Club proudly hosts matches at two grounds in Amsterdam:</p>
+      <h3 class="text-gray-900 font-semibold text-gray-900 dark:text-gray-100 text-lg mb-4">Contact</h3>
+      <p class="text-gray-500 dark:text-gray-300 text-sm mb-2">VVV Cricket Club proudly hosts matches at two grounds in Amsterdam:</p>
 
         <a href="https://www.google.com/maps/dir/?api=1&destination=VVV+Cricket+Club,+Oostzanerwerf+3,+1035+EW+Amsterdam" 
         target="_blank" 
         rel="noopener noreferrer"
         class="hover:underline">
-        <p class="text-gray-500 text-sm font-bold">Sportpark Oostzanerwerf</p>
-        <p class="text-gray-500 text-sm">Oostzanerwerf 3</p>
-        <p class="text-gray-500 text-sm">1035 EW Amsterdam</p>
+        <p class="text-gray-500 dark:text-gray-300 text-sm font-bold">Sportpark Oostzanerwerf</p>
+        <p class="text-gray-500 dark:text-gray-300 text-sm">Oostzanerwerf 3</p>
+        <p class="text-gray-500 dark:text-gray-300 text-sm">1035 EW Amsterdam</p>
         </a>
         <!-- Second Ground -->
         <a href="https://www.google.com/maps/dir/?api=1&destination=Volendammerweg+314,+1027+EA+Amsterdam,+Netherlands" 
         target="_blank" 
         rel="noopener noreferrer"
         class="hover:underline block mt-4">
-        <p class="text-gray-500 text-sm font-bold">De Weeren - Volendammerweg</p>
-        <p class="text-gray-500 text-sm">Volendammerweg 314</p>
-        <p class="text-gray-500 text-sm">1027 EA Amsterdam</p>
+        <p class="text-gray-500 dark:text-gray-300 text-sm font-bold">De Weeren - Volendammerweg</p>
+        <p class="text-gray-500 dark:text-gray-300 text-sm">Volendammerweg 314</p>
+        <p class="text-gray-500 dark:text-gray-300 text-sm">1027 EA Amsterdam</p>
       </a>
-      <p class="text-gray-500 text-sm mt-2">Phone: +31(0)644 438 948</p>
-      <p class="text-gray-500 text-sm">
-          Email: <a href="mailto:bestuur@vvv-cricket.nl" class="text-blue-600 hover:underline">bestuur@vvv-cricket.nl</a>
+      <p class="text-gray-500 dark:text-gray-300 text-sm mt-2">Phone: +31(0)644 438 948</p>
+      <p class="text-gray-500 dark:text-gray-300 text-sm">
+          Email: <a href="mailto:bestuur@vvv-cricket.nl" class="text-blue-600 dark:text-blue-300 hover:underline">bestuur@vvv-cricket.nl</a>
       </p>
       <div class="flex space-x-4 mt-4">
         <!-- Instagram -->
-  <a href="https://www.instagram.com/vvvcricket/" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-pink-500" aria-label="Visit VVV Cricket on Instagram">
+  <a href="https://www.instagram.com/vvvcricket/" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-300 hover:text-pink-500" aria-label="Visit VVV Cricket on Instagram">
     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
       <path d="M7.75 2h8.5A5.75 5.75 0 0122 7.75v8.5A5.75 5.75 0 0116.25 22h-8.5A5.75 5.75 0 012 16.25v-8.5A5.75 5.75 0 017.75 2zm0 1.5A4.25 4.25 0 003.5 7.75v8.5A4.25 4.25 0 007.75 20.5h8.5a4.25 4.25 0 004.25-4.25v-8.5A4.25 4.25 0 0016.25 3.5h-8.5zM12 7a5 5 0 110 10 5 5 0 010-10zm0 1.5a3.5 3.5 0 100 7 3.5 3.5 0 000-7zm5.5-.75a1 1 0 110 2 1 1 0 010-2z"/>
     </svg>
   </a>
 
   <!-- Facebook -->
-  <a href="https://www.facebook.com/profile.php?id=100063537399644" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-blue-600" aria-label="Visit VVV Cricket on Facebook">
+  <a href="https://www.facebook.com/profile.php?id=100063537399644" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-300 hover:text-blue-600" aria-label="Visit VVV Cricket on Facebook">
     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
       <path d="M22 12a10 10 0 10-11.5 9.95v-7.05h-2.25V12h2.25V9.5c0-2.22 1.32-3.45 3.35-3.45.97 0 1.98.17 1.98.17v2.18h-1.12c-1.1 0-1.44.68-1.44 1.37V12h2.46l-.39 2.9h-2.07v7.05A10 10 0 0022 12z"/>
     </svg>
   </a>
 
   <!-- X (Twitter) -->
-  <a href="https://x.com/vvvCricket" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-black" aria-label="Visit VVV Cricket on Twitter">
+  <a href="https://x.com/vvvCricket" target="_blank" rel="noopener noreferrer" class="text-gray-500 dark:text-gray-300 hover:text-black" aria-label="Visit VVV Cricket on Twitter">
     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
       <path d="M17.21 2H20L13.34 9.73 21 22h-3.79l-5.52-8.34L5.82 22H2l7.91-9.21L2.69 2h3.79l5.18 7.82L17.21 2z"/>
     </svg>
@@ -473,11 +472,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Quick Links -->
     <div>
-      <h3 class="text-gray-900 font-semibold text-lg mb-4">Quick Links</h3>
+      <h3 class="text-gray-900 dark:text-gray-100 font-semibold text-lg mb-4">Quick Links</h3>
       <ul class="space-y-2">
-        <li><a href="https://vvv-cricket.nl" class="hover:text-gray-900 transition">About Us</a></li>
-        <li><button onclick="showMatch()" class="hover:text-gray-900 transition">History</button></li>
-        <li><button onclick="showRegistration()" class="hover:text-gray-900 transition">Join Our Club</button></li>
+        <li><a href="https://vvv-cricket.nl" class="hover:text-gray-900 dark:text-gray-100 transition">About Us</a></li>
+        <li><button onclick="showMatch()" class="hover:text-gray-900 dark:text-gray-100 transition">History</button></li>
+        <li><button onclick="showRegistration()" class="hover:text-gray-900 dark:text-gray-100 transition">Join Our Club</button></li>
       </ul>
     </div>
   </div>
@@ -485,16 +484,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   <!-- Bottom Bar -->
   <div class="border-t border-gray-300 text-center py-6 mt-6">
-    <p class="text-gray-500 text-sm">© 2025 VVV (Veni Vidi Vici) Cricket Club. All rights reserved.</p>
+    <p class="text-gray-500 dark:text-gray-300 text-sm">© 2025 VVV (Veni Vidi Vici) Cricket Club Amsterdam. All rights reserved.</p>
   </div>
 </footer>
 <!-- Cookie Consent Banner -->
 <div id="cookieBannerWrapper" class="fixed top-16 left-0 w-full z-50">
-  <div id="cookieBanner" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white border shadow-lg p-4 flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 opacity-100 hidden transition-opacity duration-500">
-    <p class="text-gray-700 text-sm sm:text-base">
+  <div id="cookieBanner" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 border border-white dark:border-gray-700 shadow-lg p-4 flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 opacity-100 hidden transition-opacity duration-500">
+    <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
       We use cookies to enhance your browsing experience. By continuing to use this site, you accept our use of cookies.
     </p>
-    <button id="acceptCookies" class="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm sm:text-base">
+    <button id="acceptCookies" class="bg-blue-600 dark:text-blue-300 hover:bg-blue-700 dark:hover:bg-blue-900 text-white dark:text-blue-300 px-4 py-2 rounded-full text-sm sm:text-base">
       Accept
     </button>
   </div>
@@ -673,19 +672,18 @@ function showRegistration() {
         });
       });
 
-      const teamList = Array.from(teams).sort();
-      let htmlTable1 = `<table class="border-collapse border w-full text-sm mb-6">
-        <thead><tr><th class="bg-gray-700 text-white border px-2 py-1">Competition</th>`;
-      teamList.forEach(t => htmlTable1 += `<th class="bg-gray-700 text-white border px-2 py-1">${t}</th>`);
+            const teamList = Array.from(teams).sort();
+      let htmlTable1 = `<table class="border-collapse border w-full text-sm mb-6 bg-white dark:bg-gray-900">
+        <thead><tr><th class="bg-gray-700 dark:bg-gray-800 text-white dark:text-gray-100 border px-2 py-1">Competition</th>`;
+      teamList.forEach(t => htmlTable1 += `<th class="bg-gray-700 dark:bg-gray-800 text-white dark:text-gray-100 border px-2 py-1">${t}</th>`);
       htmlTable1 += `</tr></thead><tbody>`;
 
       Object.keys(competitions).forEach((comp, idx) => {
-        //htmlTable1 += `<tr><td class="border px-2 py-1 font-bold">${comp}</td>`;
-        const rowClass = idx % 2 === 1 ? "bg-gray-100" : "";
-        htmlTable1 += `<tr class="${rowClass}"><td class="border px-2 py-1 font-bold">${comp}</td>`;
+        const rowClass = idx % 2 === 1 ? "bg-gray-100 dark:bg-gray-800" : "bg-white dark:bg-gray-900";
+        htmlTable1 += `<tr class="${rowClass}"><td class="border px-2 py-1 font-bold text-gray-900 dark:text-gray-100">${comp}</td>`;
         teamList.forEach(t => {
           const count = competitions[comp][t] || 0;
-          htmlTable1 += `<td class="border px-2 py-1 text-center">${count > 0 ? count : ""}</td>`;
+          htmlTable1 += `<td class="border px-2 py-1 text-center text-gray-900 dark:text-gray-100">${count > 0 ? count : ""}</td>`;
         });
         htmlTable1 += `</tr>`;
       });
@@ -697,18 +695,18 @@ function showRegistration() {
       // ===== Table 2: Last 3 games =====
       const lastThreeGames = data.slice(0, 3);
       let htmlTable2 = `<h3 class="text-xl font-bold mb-2">Last 3 Games</h3>
-        <table class="border-collapse border w-full text-sm">
+        <table class="border-collapse border w-full text-sm bg-white dark:bg-gray-900">
         <thead>
           <tr>
-            <th class="bg-gray-700 text-white border px-2 py-1">Date</th>
-            <th class="bg-gray-700 text-white border px-2 py-1">Team</th>
-            <th class="bg-gray-700 text-white border px-2 py-1">Competition</th>
+            <th class="bg-gray-700 dark:bg-gray-800 text-white dark:text-gray-100 border px-2 py-1">Date</th>
+            <th class="bg-gray-700 dark:bg-gray-800 text-white dark:text-gray-100 border px-2 py-1">Team</th>
+            <th class="bg-gray-700 dark:bg-gray-800 text-white dark:text-gray-100 border px-2 py-1">Competition</th>
           </tr>
         </thead>
         <tbody>`;
 
       lastThreeGames.forEach((entry, idx) => {
-        const rowClass = idx % 2 === 1 ? "bg-gray-100" : "";
+        const rowClass = idx % 2 === 1 ? "bg-gray-100 dark:bg-gray-800" : "bg-white dark:bg-gray-900";
         const team = entry.entity_name || "Other";
         let competition = "Unknown";
         let date = "";
@@ -718,9 +716,9 @@ function showRegistration() {
         });
 
         htmlTable2 += `<tr class="${rowClass}">
-          <td class="border px-2 py-1">${date}</td>
-          <td class="border px-2 py-1">${team}</td>
-          <td class="border px-2 py-1">${competition}</td>
+          <td class="border px-2 py-1 text-gray-900 dark:text-gray-100">${date}</td>
+          <td class="border px-2 py-1 text-gray-900 dark:text-gray-100">${team}</td>
+          <td class="border px-2 py-1 text-gray-900 dark:text-gray-100">${competition}</td>
         </tr>`;
       });
 
