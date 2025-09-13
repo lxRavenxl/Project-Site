@@ -1,0 +1,7 @@
+# Allow all web crawlers
+User-agent: *
+Disallow: /private/
+Disallow: /admin/
+
+# Point to the sitemap
+Sitemap: https://vvv-cricket.nl/sitemap.xml
