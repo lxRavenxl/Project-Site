@@ -78,7 +78,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript>
   <link rel="stylesheet" href="registration.css?v=1.6">
 </noscript>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
 	<!-- Google Tag Manager (noscript) -->
@@ -371,7 +371,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <input type="text" id="previous_club" name="Previous_Club">
 
       <!-- Google reCAPTCHA -->
-      <div class="g-recaptcha" data-sitekey="6LcUm_sZAAAAAN1vGiY6Fr-iibeogIjxAtsGfpjL"></div>
+      <div id="captcha"></div>
 
       <button type="submit">Submit Registration</button>
     </form>
@@ -474,9 +474,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div>
       <h3 class="text-gray-900 dark:text-gray-100 font-semibold text-lg mb-4">Quick Links</h3>
       <ul class="space-y-2">
-        <li><a href="https://vvv-cricket.nl" class="hover:text-gray-900 dark:text-gray-100 transition">About Us</a></li>
-        <li><button onclick="showMatch()" class="hover:text-gray-900 dark:text-gray-100 transition">History</button></li>
-        <li><button onclick="showRegistration()" class="hover:text-gray-900 dark:text-gray-100 transition">Join Our Club</button></li>
+        <li><a href="https://vvv-cricket.nl" class="hover:text-blue-700 dark:hover:text-blue-300 transition">About Us</a></li>
+        <li><button onclick="showMatch()" class="hover:text-blue-700 dark:hover:text-blue-300 transition">History</button></li>
+        <li><button onclick="showRegistration()" class="hover:text-blue-700 dark:hover:text-blue-300 transition">Join Our Club</button></li>
       </ul>
     </div>
   </div>
@@ -826,6 +826,21 @@ document.addEventListener("DOMContentLoaded", () => {
   animatedCards.forEach(card => observer.observe(card));
   animatedTitles.forEach(title => observer.observe(title));
 });
+</script>
+<script>
+  function renderCaptcha() {
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    grecaptcha.render('captcha', {
+      sitekey: '6LcUm_sZAAAAAN1vGiY6Fr-iibeogIjxAtsGfpjL',
+      theme: isDark ? 'dark' : 'light'
+    });
+  }
+
+  // This will be called when the reCAPTCHA API loads
+  function onloadCallback() {
+    renderCaptcha();
+  }
 </script>
 
 </body>
