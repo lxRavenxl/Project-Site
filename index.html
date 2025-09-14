@@ -541,8 +541,13 @@ document.getElementById("registrationForm").addEventListener("submit", async fun
 </script>
 <script>
 function showRegistration() {
-  // Hide home section
-  document.getElementById('home').classList.add('hidden');
+  // Hide main and other sections
+  const main = document.querySelector('main');
+  if (main) main.classList.add('hidden');
+
+  document.querySelectorAll('section').forEach(sec => {
+    if (sec.id !== 'registration') sec.classList.add('hidden');
+  });
 
   const registration = document.getElementById('registration');
 
@@ -552,6 +557,8 @@ function showRegistration() {
   // Trigger fade + slide-in transition
   setTimeout(() => {
     registration.classList.remove('opacity-0', 'translate-y-10');
+    // Scroll to top AFTER section is visible
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }, 10);
 }
 </script>
