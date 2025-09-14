@@ -78,7 +78,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <noscript>
   <link rel="stylesheet" href="registration.css?v=1.6">
 </noscript>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
 	<!-- Google Tag Manager (noscript) -->
@@ -371,7 +371,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <input type="text" id="previous_club" name="Previous_Club">
 
       <!-- Google reCAPTCHA -->
-      <div class="g-recaptcha" data-sitekey="6LcUm_sZAAAAAN1vGiY6Fr-iibeogIjxAtsGfpjL"></div>
+      <div id="captcha"></div>
 
       <button type="submit">Submit Registration</button>
     </form>
@@ -826,6 +826,21 @@ document.addEventListener("DOMContentLoaded", () => {
   animatedCards.forEach(card => observer.observe(card));
   animatedTitles.forEach(title => observer.observe(title));
 });
+</script>
+<script>
+  function renderCaptcha() {
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    grecaptcha.render('captcha', {
+      sitekey: '6LcUm_sZAAAAAN1vGiY6Fr-iibeogIjxAtsGfpjL',
+      theme: isDark ? 'dark' : 'light'
+    });
+  }
+
+  // This will be called when the reCAPTCHA API loads
+  function onloadCallback() {
+    renderCaptcha();
+  }
 </script>
 
 </body>
