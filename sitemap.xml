@@ -4,7 +4,7 @@
   <!-- Homepage -->
   <url>
     <loc>https://vvv-cricket.nl/</loc>
-    <lastmod>2025-09-04</lastmod>
+    <lastmod>2025-09-30</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
@@ -12,7 +12,7 @@
   <!-- About section -->
   <url>
     <loc>https://vvv-cricket.nl/#about</loc>
-    <lastmod>2025-09-04</lastmod>
+    <lastmod>2025-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -20,23 +20,23 @@
   <!-- Facilities section -->
   <url>
     <loc>https://vvv-cricket.nl/#facilities</loc>
-    <lastmod>2025-09-04</lastmod>
+    <lastmod>2025-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <!-- History / Heritage section -->
   <url>
-    <loc>https://vvv-cricket.nl/#history</loc>
-    <lastmod>2025-09-04</lastmod>
+    <loc>https://vvv-cricket.nl/history.html</loc>
+    <lastmod>2025-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <!-- Registration section -->
   <url>
-    <loc>https://vvv-cricket.nl/#registration</loc>
-    <lastmod>2025-09-04</lastmod>
+    <loc>https://vvv-cricket.nl/form.html</loc>
+    <lastmod>2025-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -44,7 +44,7 @@
   <!-- Contact section -->
   <url>
     <loc>https://vvv-cricket.nl/#contact</loc>
-    <lastmod>2025-09-04</lastmod>
+    <lastmod>2025-09-30</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
@@ -52,7 +52,7 @@
 <!-- Privacy Policy page -->
 <url>
   <loc>https://vvv-cricket.nl/privacy-policy.html</loc>
-  <lastmod>2025-09-27</lastmod>
+  <lastmod>2025-09-30</lastmod>
   <changefreq>yearly</changefreq>
   <priority>0.5</priority>
 </url>
