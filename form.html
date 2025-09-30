@@ -131,76 +131,52 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </header>
 
   <!-- ===== PAGE CONTENT (pushed down to avoid navbar overlap) ===== -->
-<main id="home" class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-  <section class="relative bg-gradient-to-br from-blue-50 to-blue-100 dark:from-gray-900 dark:to-gray-800 overflow-hidden">
-    <div class="absolute inset-0 bg-gradient-to-r from-blue-600/10 to-transparent"></div>
-    
-    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 lg:py-28">
-      <h1 class="text-2xl font-bold mb-4">Privacy Policy</h1>
-    
-    <p class="mb-4">Last updated: September 2025</p>
+<main id="home" class="pt-5 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+</main>
+<section id="registration">
+  <div class="container" id="formContainer">
+    <div class="header">
+      <h1>Join VVV (Veni Vidi Vici) Cricket Club</h1>
+      <p>Start your journey with us by completing this registration form. We welcome players of all skill levels and ages.</p>
+    </div>
 
-    <p class="mb-4">
-      VVV (Veni Vidi Vici) Cricket Club (“we,” “our,” or “us”) respects your privacy and is committed to protecting it through this Privacy Policy. This policy explains how we collect, use, and protect your information when you visit our website.
-    </p>
+    <form id="registrationForm">
+      <label for="full_name">Full Name *</label>
+      <input type="text" id="full_name" name="Full_Name" required>
 
-<h2 class="text-xl font-semibold mb-2">1. Information We Collect</h2>
-<ul class="list-disc pl-6 mb-4" style="padding-left: 2rem;">
-  <li>Cookies and tracking data to enhance your browsing experience.</li>
-  <li>Analytics data such as IP address, browser type, and pages visited collected via Google Analytics.</li>
-  <li>Personal data you provide, such as your name and email, if you fill out forms or contact us directly.</li>
-</ul>
+      <label for="date_of_birth">Date of Birth *</label>
+      <input type="date" id="date_of_birth" name="Date_of_birth" required>
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">2. How We Use Your Information</h2>
-    <p class="mb-4">
-      We use your information to improve our website, provide analytics, personalize content and ads, and communicate with you if you request it.
-    </p>
+      <label for="address">Address *</label>
+      <textarea id="address" name="Address" rows="3" required></textarea>
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">3. Cookies and Similar Technologies</h2>
-    <p class="mb-4">
-      We use cookies and similar technologies to remember your preferences, analyze site performance, and deliver personalized ads via Google and other partners. You can manage or delete cookies through your browser settings at any time.
-    </p>
+      <label for="phone">Phone Number *</label>
+      <input type="text" id="phone" name="Phone" required>
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">4. Google Services and Consent</h2>
-    <p class="mb-4">
-      We use Google services (Google Analytics, Ads, and related tools), which may process your data for analytics and ad personalization. By using our site, you consent to this data processing. You can opt out of personalized ads by visiting <a href="https://adssettings.google.com/authenticated" class="text-blue-600 dark:text-blue-300 hover:underline">Google Ads Settings</a>.
-    </p>
+      <label for="email">Email Address *</label>
+      <input type="email" id="email" name="Email" required>
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">5. Data Sharing</h2>
-    <p class="mb-4">
-      We do not sell your personal information. We may share data with trusted third-party providers (like Google) solely to help us run analytics, advertising, or other services for the site.
-    </p>
+      <label for="previous_club">Previous Club</label>
+      <input type="text" id="previous_club" name="Previous_Club">
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">6. Your Rights</h2>
-    <p class="mb-4">
-      If you are located in the European Economic Area (EEA), you have the right to access, update, or delete your personal data; object to or restrict processing; and withdraw consent at any time. To exercise these rights, please contact us at 
-      <a href="mailto:bestuur@vvv-cricket.nl" class="text-blue-600 dark:text-blue-300 hover:underline">bestuur@vvv-cricket.nl</a>.
-    </p>
+      <!-- Google reCAPTCHA -->
+      <div id="captcha"></div>
+      <label style="display: flex; align-items: center; gap: 5px; margin-top: 5px;">
+        <input type="checkbox" name="privacy_agree" required style="width: auto; margin: 0;">I agree to the <a href="/privacy-policy.html" class="underline text-blue-600 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-500" target="_blank">Privacy Policy</a>
+      </label>
+      <button type="submit">Submit Registration</button>
+    </form>
+  </div>
 
-    <h2 class="text-xl font-semibold mt-6 mb-2">7. Data Retention</h2>
-    <p class="mb-4">
-      We retain your data only as long as necessary to provide our services or comply with legal obligations.
-    </p>
-
-    <h2 class="text-xl font-semibold mt-6 mb-2">8. Security</h2>
-    <p class="mb-4">
-      We take appropriate measures to protect your personal information from unauthorized access or disclosure.
-    </p>
-
-    <h2 class="text-xl font-semibold mt-6 mb-2">9. Changes to This Privacy Policy</h2>
-    <p class="mb-4">
-      We may update this Privacy Policy from time to time. Changes will be posted on this page with a revised “Last updated” date.
-    </p>
-
-    <h2 class="text-xl font-semibold mt-6 mb-2">10. Contact Us</h2>
-    <p class="mb-4">
-      If you have questions or concerns about this Privacy Policy, please contact us at: 
-      <a href="mailto:bestuur@vvv-cricket.nl" class="text-blue-600 dark:text-blue-300 hover:underline">bestuur@vvv-cricket.nl</a>.
-    </p>
- </div>
-  </section>
-  </main>
-<!-- ===== FOOTER ===== -->
+  <div class="container" id="confirmationMessage" style="display: none;">
+    <div class="confirmation">
+      <h2>Registration Submitted!</h2>
+      <p>Thank you for your interest in joining VVV (Veni Vidi Vici) Cricket Club.<br>
+      We'll review your application and get back to you within 2-3 business days.</p>
+    </div>
+  </div>
+</section>
+ <!-- ===== FOOTER ===== -->
 <footer class="bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 mt-auto">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-3 gap-12">
     
@@ -279,6 +255,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p class="text-gray-500 dark:text-gray-300 text-sm">© 2025 VVV (Veni Vidi Vici) Cricket Club Amsterdam. All rights reserved.</p>
   </div>
 </footer>
+<!-- ===== SCRIPTS ===== -->
+<script>
+document.getElementById("registrationForm").addEventListener("submit", async function(e) {
+  e.preventDefault(); // Stop normal form submission
+
+  // Validate CAPTCHA
+  const recaptchaResponse = grecaptcha.getResponse();
+  if(recaptchaResponse.length === 0) {
+    alert("Please complete the CAPTCHA before submitting.");
+    return;
+  }
+
+  const form = e.target;
+  const formData = new FormData(form);
+
+  // Remove the reCAPTCHA response field so it’s not sent to FormSubmit
+  formData.delete("g-recaptcha-response");
+
+  try {
+    const response = await fetch("https://formsubmit.co/ajax/mohsin_ghaznavi@hotmail.com", {
+      method: "POST",
+      body: formData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    });
+
+    if(response.ok) {
+      // Hide form and show confirmation message
+      document.getElementById("formContainer").style.display = "none";
+      document.getElementById("confirmationMessage").style.display = "block";
+      form.reset();
+      grecaptcha.reset(); // reset CAPTCHA
+    } else {
+      alert("Oops! Something went wrong. Please try again.");
+    }
+  } catch (error) {
+    console.error("Error submitting form:", error);
+    alert("Oops! Something went wrong. Please try again.");
+  }
+});
+</script>
 <script>
   const menuBtn = document.getElementById("menuBtn");
   const mobileMenu = document.getElementById("mobileMenu");
@@ -306,6 +324,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       showMatch();
       closeMobileMenu();
     });
+  }
+</script>
+<script>
+  function renderCaptcha() {
+    const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+    grecaptcha.render('captcha', {
+      sitekey: '6LcUm_sZAAAAAN1vGiY6Fr-iibeogIjxAtsGfpjL',
+      theme: isDark ? 'dark' : 'light'
+    });
+  }
+
+  // This will be called when the reCAPTCHA API loads
+  function onloadCallback() {
+    renderCaptcha();
   }
 </script>
 </body>
