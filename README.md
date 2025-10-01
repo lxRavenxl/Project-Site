@@ -14,7 +14,9 @@ The website enables players, supporters, and visitors to:
 ## 📂 Project Structure  
 
   / (root)  
-  │── 📄 **index.html** – Main HTML file (homepage + registration form + History)  
+  │── 📄 **index.html** – Main HTML file (homepage)
+  │── 📄 **form.html** – Form HTML file (registration form)
+  │── 📄 **history.html** – History HTML file (Player File History)
   │── 🎨 **registration.css** – Registration form styles  
   │── 🎨 **tailwind.css** – Tailwind-generated styles for responsive layout  
   │── 🖼️ **logo_t.png** – Club logo  
