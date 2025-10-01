@@ -279,6 +279,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p class="text-gray-500 dark:text-gray-300 text-sm">© 2025 VVV (Veni Vidi Vici) Cricket Club Amsterdam. All rights reserved.</p>
   </div>
 </footer>
+<!-- Cookie Consent Banner -->
+<div id="cookieBannerWrapper" class="fixed top-16 left-0 w-full z-50">
+  <div id="cookieBanner" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 bg-white dark:bg-gray-900 border border-white dark:border-gray-700 shadow-lg p-4 flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 opacity-100 hidden transition-opacity duration-500">
+    <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base">
+      We use cookies to improve your experience, provide analytics, and personalize content & ads. By accepting, you agree to our use of cookies as described in our <a href="privacy-policy.html" class="underline text-blue-600 dark:text-blue-300 hover:text-blue-800 dark:hover:text-blue-500" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
+    </p>
+    <button id="acceptCookies" class="bg-blue-600 dark:text-blue-300 hover:bg-blue-700 dark:hover:bg-blue-900 text-white dark:text-blue-300 px-4 py-2 rounded-full text-sm sm:text-base">
+      Accept
+    </button>
+  </div>
+</div>
 <script>
   const menuBtn = document.getElementById("menuBtn");
   const mobileMenu = document.getElementById("mobileMenu");
@@ -305,6 +316,76 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     matchBtnMobile.addEventListener("click", () => {
       showMatch();
       closeMobileMenu();
+    });
+  }
+</script>
+<script>
+  // Simple cookie functions
+  function setCookie(name, value, days) {
+    const d = new Date();
+    d.setTime(d.getTime() + (days*24*60*60*1000));
+    const expires = "expires="+ d.toUTCString();
+    document.cookie = name + "=" + value + ";" + expires + ";path=/;SameSite=Lax";
+  }
+
+  function getCookie(name) {
+    let cname = name + "=";
+    let decodedCookie = decodeURIComponent(document.cookie);
+    let ca = decodedCookie.split(';');
+    for(let i=0; i < ca.length; i++) {
+      let c = ca[i].trim();
+      if (c.indexOf(cname) === 0) {
+        return c.substring(cname.length, c.length);
+      }
+    }
+    return "";
+  }
+
+  // Elements
+  const cookieBanner = document.getElementById("cookieBanner");
+  const acceptBtn = document.getElementById("acceptCookies");
+
+  // Show banner only if not accepted before
+  if (getCookie("cookiesAccepted") === "true") {
+    gtag('consent', 'update', {
+      ad_user_data: 'granted',
+      ad_personalization: 'granted',
+      ad_storage: 'granted',
+      analytics_storage: 'granted'
+    });
+  } else {
+    // Show banner if not accepted before
+    cookieBanner.style.display = "flex";
+  }
+
+  // When Accept is clicked
+  acceptBtn.addEventListener("click", function() {
+    setCookie("cookiesAccepted", "true", 365); // 1 year
+    gtag('consent', 'update', {
+      ad_user_data: 'granted',
+      ad_personalization: 'granted',
+      ad_storage: 'granted',
+      analytics_storage: 'granted'
+    });
+    cookieBanner.classList.add("opacity-0");
+    setTimeout(() => {
+      cookieBanner.style.display = "none";
+    }, 500);
+  });
+</script>
+<script>
+  const grantButton = document.getElementById("acceptCookies");
+
+  if (grantButton) {
+    grantButton.addEventListener("click", function () {
+      localStorage.setItem("consentGranted", "true");
+
+      gtag('consent', 'update', {
+        ad_user_data: 'granted',
+        ad_personalization: 'granted',
+        ad_storage: 'granted',
+        analytics_storage: 'granted'
+      });
     });
   }
 </script>
