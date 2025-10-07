@@ -9,7 +9,8 @@ The website enables players, supporters, and visitors to:
 * Register to join the club online.
 * Stay updated on matches and highlights.
 * Access contact details, location maps, and social media links.
-* Live website: https://vvv-cricket.nl
+* Production website: https://vvv-cricket.nl
+* Current iteration: https://lxravenxl.github.io/Project-Site/
 
 ## 📂 Project Structure  
 
