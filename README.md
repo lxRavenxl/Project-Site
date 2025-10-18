@@ -23,8 +23,9 @@ The website enables players, supporters, and visitors to:
   │── 🖼️ **logo_t.png** – Club logo  
   │── 🖼️ **vvv1.avif** / **vvv2.avif** – Hero and gallery images  
   │── 🎥 **vvv6-final-celebrtion.mp4** – Video highlight file  
-  │── 📜 **privacy-policy.html** – Linked privacy policy (optional)  
-
+  │── 📄 **privacy-policy.html** – Linked privacy policy (optional)  
+  │── 🧪 **tests** – JavaScripts to test links
+  │── 📊 **tests-results** - JSON test results.
 
  ## ✨ Features
 
@@ -43,7 +44,7 @@ The website enables players, supporters, and visitors to:
 
 * __HTML5__ – Semantic, accessible markup.
 * __TailwindCSS__ – Utility-first CSS framework for responsive design.
-* __JavaScript__ – For interactivity (registration form, match section, cookies).
+* __JavaScript__ – For interactivity (registration form, match section, cookies) and Tests.
 * __Google reCAPTCHA v2__ – Anti-spam protection for forms.
 * __FormSubmit__ – Serverless form submissions.
 * __Google Analytics + Tag Manager__ – Visitor tracking and analytics.
