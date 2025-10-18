@@ -1,0 +1,31 @@
+{
+  "name": "project-site",
+  "version": "1.0.0",
+  "description": "__VVV (Veni Vidi Vici) Cricket Club – Official Website__",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lxRavenxl/Project-Site.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lxRavenxl/Project-Site/issues"
+  },
+  "homepage": "https://github.com/lxRavenxl/Project-Site#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.56.1"
+  },
+  "dependencies": {
+    "playwright": "^1.56.1",
+    "playwright-core": "^1.56.1"
+  }
+}
