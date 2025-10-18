@@ -26,6 +26,7 @@ The website enables players, supporters, and visitors to:
   │── 📄 **privacy-policy.html** – Linked privacy policy (optional)  
   │── 🧪 **tests** – JavaScripts to test links
   │── 📊 **tests-results** - JSON test results.
+  
 
  ## ✨ Features
 
