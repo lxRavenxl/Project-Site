@@ -24,7 +24,7 @@ The website enables players, supporters, and visitors to:
   │── 🖼️ **vvv1.avif** / **vvv2.avif** – Hero and gallery images  
   │── 🎥 **vvv6-final-celebrtion.mp4** – Video highlight file  
   │── 📄 **privacy-policy.html** – Linked privacy policy (optional)  
-  │── 🧪 **tests** – JavaScripts to test links
+  │── 🧪 **tests** – JavaScripts to test links 
   │── 📊 **tests-results** - JSON test results.
 
  ## ✨ Features
