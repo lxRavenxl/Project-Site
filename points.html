@@ -192,15 +192,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <!-- Highest Level Played -->
     <div id="highestLevelContainer">
-        <label class="block font-semibold mb-1">Highest Level Played (3 years before April 1 of joining)</label>
+        <label class="block font-semibold mb-1">Highest Level Played</label>
         <select id="highestLevel" required class="w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 p-2">
             <option value="">Select</option>
             <option value="International">International (Test/ODI/T20I)</option>
             <option value="FirstClass">1st Class / List A</option>
             <option value="Provincial">Provincial A / PRO Series</option>
             <option value="ForeignClub">Foreign Club</option>
-            <option value="Transition30Plus">Transition (≥30 matches)</option>
-            <option value="TransitionLess30">Transition (<30 matches)</option>
+            <option value="Transition30Plus">Change Club (≥30 THE matches in 3 years)</option>
+            <option value="TransitionLess30">Change Club (<30 THE matches in 3 years)</option>
             <option value="THE3YearsPlus">Top/Hofd/Erste Class (≥3 years at current club)</option>
         </select>
     </div>
@@ -368,17 +368,17 @@ function calculatePoints() {
 
         case "Transition30Plus": 
             points = 3; 
-            reason = "Transition player (≥30 matches)"; 
+            reason = "Non EU - Transition player (≥30 matches)"; 
             break;
 
         case "TransitionLess30": 
             points = 2; 
-            reason = "Transition player (<30 matches)"; 
+            reason = "Non EU - Transition player (<30 matches)"; 
             break;
         
         case "THE3YearsPlus": 
-            points = 1; 
-            reason = "Top/Hofd/Erste Class (≥3 years at current club)"; 
+            points = 2; 
+            reason = "Non EU - Top/Hofd/Erste Class (≥3 years at current club)"; 
             break;
         
         default:
@@ -394,12 +394,12 @@ function calculatePoints() {
             // Never played cricket → always 1 point
             points = 1;
             reason = "Late starter (EU player, never played cricket before)";
-        } else if (startedBefore16 === "yes") {
+        } else if (startedBefore16 === "yes" && sameClub === "yes") {
             points = 1;
             reason = "Started before 16 at the club (EU player)";
         } else if (sameClub === "yes") {
             points = 1;
-            reason = "Retains existing points (same club)";
+            reason = "Retains existing points (same club) if already at 1";
         } else {
             const canPlay = canPlayDutch === "yes";
 
@@ -436,7 +436,7 @@ function calculatePoints() {
                 
                 case "THE3YearsPlus": 
                     points = 1; 
-                    reason = "Top/Hofd/Erste Class (≥3 years at current club)"; 
+                    reason = "EU - Top/Hofd/Erste Class (≥3 years at current club)"; 
                     break;
                 
                 default:
@@ -497,18 +497,52 @@ function toggleEUFields() {
 function toggleHighestLevel() {
   const playedBefore = document.getElementById('playedBefore').value;
   const highestLevelContainer = document.getElementById('highestLevelContainer');
-  const highestLevel = document.getElementById('highestLevel');
+  const highestLevel = document.getElementById('highestLevel').value;
 
+  const sameClubContainer = document.getElementById('sameClubContainer');
+  const sameClub = document.getElementById('sameClub');
+
+  // Hide/show highestLevel based on playedBefore
   if (playedBefore === "no") {
     highestLevelContainer.classList.add('hidden');
-    highestLevel.required = false;
-    highestLevel.value = ""; // reset selection
+    document.getElementById('highestLevel').required = false;
+    document.getElementById('highestLevel').value = ""; // reset selection
+
+    // Also hide sameClub
+    sameClubContainer.classList.add('hidden');
+    sameClub.required = false;
+    sameClub.value = "";
   } else {
     highestLevelContainer.classList.remove('hidden');
-    highestLevel.required = true;
+    document.getElementById('highestLevel').required = true;
+
+    // Hide sameClub for Transition or THE3YearsPlus
+    if (
+      highestLevel === "Transition30Plus" || 
+      highestLevel === "TransitionLess30" || 
+      highestLevel === "THE3YearsPlus"
+    ) {
+      sameClubContainer.classList.add('hidden');
+      sameClub.required = false;
+      sameClub.value = "";
+    } else if (document.getElementById('passport').value === "EU") {
+      // Show sameClub only for EU passport players if not Transition or THE3YearsPlus
+      sameClubContainer.classList.remove('hidden');
+      sameClub.required = true;
+    } else {
+      // Non-EU players should not see sameClub
+      sameClubContainer.classList.add('hidden');
+      sameClub.required = false;
+      sameClub.value = "";
+    }
   }
 }
+
+// Add event listeners if not already added
+document.getElementById('playedBefore').addEventListener('change', toggleHighestLevel);
+document.getElementById('highestLevel').addEventListener('change', toggleHighestLevel);
 </script>
+
 <script>
   const menuBtn = document.getElementById("menuBtn");
   const mobileMenu = document.getElementById("mobileMenu");
