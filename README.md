@@ -23,7 +23,8 @@ The website enables players, supporters, and visitors to:
   │── 🖼️ **logo_t.png** – Club logo  
   │── 🖼️ **vvv1.avif** / **vvv2.avif** – Hero and gallery images  
   │── 🎥 **vvv6-final-celebrtion.mp4** – Video highlight file  
-  │── 📄 **privacy-policy.html** – Linked privacy policy (optional)  
+  │── 📄 **privacy-policy.html** – Linked privacy policy
+  │── 📄 **points.html** – Calculate player points for THE class.
   │── 🧪 **tests** – JavaScripts to test links
   │── 📊 **tests-results** - JSON test results.
   
