@@ -15,17 +15,17 @@ The website enables players, supporters, and visitors to:
 ## 📂 Project Structure  
 
   / (root)  
-  │── 📄 **index.html** – Main HTML file (homepage).  
-  │── 📄 **form.html** – Form HTML file (registration form).  
-  │── 📄 **history.html** – History HTML file (Player File History).  
-  │── 🎨 **registration.css** – Registration form styles.  
-  │── 🎨 **tailwind.css** – Tailwind-generated styles for responsive layout.  
-  │── 🖼️ **logo_t.png** – Club logo.  
-  │── 🖼️ **vvv1.avif** / **vvv2.avif** – Hero and gallery images.  
-  │── 🎥 **vvv6-final-celebrtion.mp4** – Video highlight file.  
-  │── 📄 **privacy-policy.html** – Linked privacy policy.  
-  │── 📄 **points.html** – Calculate player points for THE class.  
-  │── 🧪 **tests** – JavaScripts to test links.  
+  │── 📄 **index.html** – Main HTML file (homepage)  
+  │── 📄 **form.html** – Form HTML file (registration form)  
+  │── 📄 **history.html** – History HTML file (Player File History)  
+  │── 🎨 **registration.css** – Registration form styles  
+  │── 🎨 **tailwind.css** – Tailwind-generated styles for responsive layout  
+  │── 🖼️ **logo_t.png** – Club logo  
+  │── 🖼️ **vvv1.avif** / **vvv2.avif** – Hero and gallery images  
+  │── 🎥 **vvv6-final-celebrtion.mp4** – Video highlight file  
+  │── 📄 **privacy-policy.html** – Linked privacy policy
+  │── 📄 **points.html** – Calculate player points for THE class.
+  │── 🧪 **tests** – JavaScripts to test links
   │── 📊 **tests-results** - JSON test results.
   
 
