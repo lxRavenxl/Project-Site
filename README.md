@@ -27,6 +27,7 @@ The website enables players, supporters, and visitors to:
   │── 📄 **points.html** – Calculate player points for THE class.
   │── 🧪 **tests** – JavaScripts to test links
   │── 📊 **tests-results** - JSON test results.
+  
 
  ## ✨ Features
 
