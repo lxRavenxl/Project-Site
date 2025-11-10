@@ -132,21 +132,22 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <a href="points.html" id="pointsBtnMobile" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">Points</a>
   </div>
 </header>
-<main class="pt-24 pb-20 bg-gray-50 dark:bg-gray-800 min-h-screen">
-  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-    <h1 class="text-3xl font-bold text-center mb-8 text-gray-900 dark:text-gray-100">
+<main class="pt-5 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+  <section id="pointSection" class="py-20 bg-white dark:bg-gray-900">
+  <div class="max-w-3xl mx-auto px-4">
+    <h1 class="text-2xl font-bold mb-6 text-gray-900 dark:text-gray-100">
       Player Points Calculator
     </h1>
 
     <form id="playerForm" class="bg-white dark:bg-gray-900 shadow-md rounded-lg p-6 space-y-4">
       <div>
         <label class="block font-semibold mb-1">Full Name</label>
-        <input type="text" id="name" required class="w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 p-2">
+        <input type="text" id="name" placeholder="Enter Player Name" required class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded px-3 py-2 w-full">
       </div>
 
     <div>
         <label class="block font-semibold mb-1">Passport Type</label>
-        <select id="passport" required class="w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 p-2" onchange="toggleEUFields()">
+        <select id="passport" required class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded px-3 py-2 w-full" onchange="toggleEUFields()">
           <option value="">Select</option>
           <option value="EU">EU Passport</option>
           <option value="Other">Non-EU Passport</option>
@@ -155,7 +156,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div id="startedBefore16Container" class="hidden">
         <label class="block font-semibold mb-1">Started before 16 at the club?</label>
-        <select id="startedBefore16" required class="w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 p-2">
+        <select id="startedBefore16" required class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded px-3 py-2 w-full">
           <option value="">Select</option>
           <option value="yes">Yes</option>
           <option value="no">No</option>
@@ -164,7 +165,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div id="canPlayDutchContainer" class="hidden">
         <label class="block font-semibold mb-1">Can Play for Dutch National Team?</label>
-        <select id="canPlayDutch" required class="w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 p-2">
+        <select id="canPlayDutch" required class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded px-3 py-2 w-full">
           <option value="">Select</option>
           <option value="yes">Yes</option>
           <option value="no">No</option>
@@ -173,7 +174,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div>
         <label class="block font-semibold mb-1">Arrived in NL for Work or Studies?</label>
-        <select id="arrivedWorkStudy" required class="w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 p-2">
+        <select id="arrivedWorkStudy" required class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded px-3 py-2 w-full">
           <option value="">Select</option>
           <option value="yes">Yes</option>
           <option value="no">No</option>
@@ -183,7 +184,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Has Played Cricket Before -->
     <div>
         <label class="block font-semibold mb-1">Has Played Cricket Before?</label>
-        <select id="playedBefore" required class="w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 p-2" onchange="toggleHighestLevel()">
+        <select id="playedBefore" required class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded px-3 py-2 w-full" onchange="toggleHighestLevel()">
             <option value="">Select</option>
             <option value="yes">Yes</option>
             <option value="no">No</option>
@@ -193,7 +194,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Highest Level Played -->
     <div id="highestLevelContainer">
         <label class="block font-semibold mb-1">Highest Level Played</label>
-        <select id="highestLevel" required class="w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 p-2">
+        <select id="highestLevel" required class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded px-3 py-2 w-full">
             <option value="">Select</option>
             <option value="International">International (Test/ODI/T20I)</option>
             <option value="FirstClass">1st Class / List A</option>
@@ -206,7 +207,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
     <div id="sameClubContainer" class="hidden">
     <label class="block font-semibold mb-1">Stayed at same club?</label>
-    <select id="sameClub" class="w-full rounded-md border-gray-300 dark:border-gray-700 dark:bg-gray-800 p-2">
+    <select id="sameClub" class="border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100 rounded px-3 py-2 w-full">
         <option value="">Select</option>
         <option value="yes">Yes</option>
         <option value="no">No</option>
@@ -222,6 +223,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div id="result" class="mt-6 text-lg font-semibold text-center text-gray-800 dark:text-gray-100"></div>
   </div>
+  </section>
 </main>
 <!-- ===== FOOTER ===== -->
 <footer class="bg-white dark:bg-gray-900 text-gray-700 dark:text-gray-300 mt-auto">
