@@ -1,0 +1,47 @@
+  <!-- ===== NAVBAR ===== -->
+  <header class="bg-white dark:bg-gray-900 shadow-md dark:shadow-gray-600 hover:shadow-xl dark:hover:shadow-gray-600 fixed w-full top-0 left-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16">
+
+        <!-- Logo -->
+        <a href="https://vvv-cricket.nl" class="flex items-center space-x-2">
+          <img src="logo_t.png" alt="VVV Logo" class="h-10 w-auto">
+        </a>
+        <!-- Right side container -->
+        <div class="flex items-center space-x-2 ml-auto">
+        <!-- Desktop Nav Links -->
+        <nav class="hidden md:flex items-center space-x-4">
+          <a href="https://vvv-cricket.nl" class="text-gray-700 dark:text-gray-300 font-medium hover:text-blue-700 dark:hover:text-blue-300 transition">Home</a>
+          <a href="history.html" id="matchBtn" class="text-gray-700 dark:text-gray-300 font-medium hover:text-blue-700 dark:hover:text-blue-300 transition">History</a>
+          <a href="points.html" id="pointsBtn" class="text-gray-700 dark:text-gray-300 font-medium hover:text-blue-700 dark:hover:text-blue-300 transition">Points</a>
+        </nav>
+
+        <!-- Mobile Hamburger -->
+        <button id="menuBtn" class="md:hidden flex flex-col space-y-1.5 focus:outline-none" aria-label="Open menu">
+          <span class="w-6 h-0.5 bg-gray-800 dark:bg-gray-300"></span>
+          <span class="w-6 h-0.5 bg-gray-800 dark:bg-gray-300"></span>
+          <span class="w-6 h-0.5 bg-gray-800 dark:bg-gray-300"></span>
+        </button>
+
+<a href="form.html" 
+   class="bg-red-600 hover:bg-red-700 text-white font-semibold rounded-full shadow hover:shadow-lg transition
+          flex items-center space-x-1
+          text-sm sm:text-base px-4 sm:px-5 py-2 sm:py-2.5 min-w-[97px]">
+  <!-- User Plus Icon -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-3 h-3 sm:w-4 sm:h-4">
+    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+    <circle cx="9" cy="7" r="4"></circle>
+    <line x1="19" x2="19" y1="8" y2="14"></line>
+    <line x1="22" x2="16" y1="11" y2="11"></line>
+  </svg>
+  <span>Join Us</span>
+</a>
+      </div>
+    </div>
+  <!-- Mobile Dropdown Menu -->
+  <div id="mobileMenu" class="hidden md:hidden bg-white dark:bg-gray-900 shadow-lg dark:shadow-gray-600border-t">
+    <a href="https://vvv-cricket.nl" id="homeBtnMobile" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">Home</a>
+    <a href="history.html" id="matchBtnMobile" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">History</a>
+    <a href="points.html" id="pointsBtnMobile" class="block px-4 py-2 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-800">Points</a>
+  </div>
+</header>
