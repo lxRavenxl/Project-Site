@@ -18,6 +18,8 @@ The website enables players, supporters, and visitors to:
   │── 📄 **index.html** – Main HTML file (homepage).  
   │── 📄 **form.html** – Form HTML file (registration form).  
   │── 📄 **history.html** – History HTML file (Player File History).  
+  │── 📄 **nav.html** – Navigation.  
+  │── 📄 **footer.html** – Footer.  
   │── 🎨 **registration.css** – Registration form styles.  
   │── 🎨 **tailwind.css** – Tailwind-generated styles for responsive layout.   
   │── 🖼️ **logo_t.png** – Club logo.  
