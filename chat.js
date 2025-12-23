@@ -13,7 +13,7 @@
     });
 
     chatDiv.innerHTML = `
-      <a href="https://vvv-circket.slack.com/" target="_blank" rel="noopener noreferrer"
+      <a href="https://join.slack.com/t/vvv-circket/shared_invite/zt-3lvxt5b78-FeMW63Kf33RJ5qNCuJkZPQ" target="_blank" rel="noopener noreferrer"
          style="
            display: flex;
            align-items: center;
