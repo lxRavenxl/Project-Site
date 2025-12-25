@@ -16,7 +16,6 @@ The website enables players, supporters, and visitors to:
 
   / (root)  
   │── 📄 **index.html** – Main HTML file (homepage).  
-  │── 📄 **form.html** – Form HTML file (registration form).  
   │── 📄 **history.html** – History HTML file (Player File History).  
   │── 📄 **nav.html** – Navigation.  
   │── 📄 **footer.html** – Footer.  
