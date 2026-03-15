@@ -18,9 +18,8 @@ The website enables players, supporters, and visitors to:
   │── 📄 **index.html** – Main HTML file (homepage).  
   │── 📄 **history.html** – History HTML file (Player File History).  
   │── 📄 **nav.html** – Navigation.  
-  │── 📄 **footer.html** – Footer.  
-  |── 📄 **points.html** – Points Calculator    
-  |── 📄 **Feedback** – Jira Forms    
+  │── 📄 **footer.html** – Footer.    
+  |── 📄 **Feedback** – Jira Forms.    
   │── 🎨 **registration.css** – Registration form styles.  
   │── 🎨 **tailwind.css** – Tailwind-generated styles for responsive layout.   
   │── 🖼️ **logo_t.png** – Club logo.  
