@@ -50,5 +50,5 @@ The website enables players, supporters, and visitors to:
 * __TailwindCSS__ – Utility-first CSS framework for responsive design.
 * __JavaScript__ – For interactivity (registration form, match section, cookies) and Tests.
 * __Google reCAPTCHA v2__ – Anti-spam protection for forms.
-* __FormSubmit__ – Serverless form submissions.
+* __FormSubmit__ – Jira Form (backend Jira Cloud project)
 * __Google Analytics + Tag Manager__ – Visitor tracking and analytics.
